@@ -1,9 +1,5 @@
-# AZURE_OPENAI_ENDPOINT = "https://azureapi.zotgpt.uci.edu/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01"
-#AZURE_OPENAI_API_KEY = "5e9b6254c3574307bc3be7f940c54272"  # Replace with actual API key
-# dylan: 51d877100db5467f8c417cee5e4daf97 
 #AZURE_DEPLOYMENT_NAME = "gpt-4o"
 #AZURE_API_VERSION = "2024-02-01"
-# 
 
 import openai
 import os
@@ -13,7 +9,7 @@ import re
 
 # ✅ Azure OpenAI Configuration
 AZURE_OPENAI_ENDPOINT = "https://azureapi.zotgpt.uci.edu/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01"
-AZURE_OPENAI_API_KEY = "51d877100db5467f8c417cee5e4daf97"  # Replace with actual API key
+AZURE_OPENAI_API_KEY = "xxx"  # Replace with actual API key
 AZURE_DEPLOYMENT_NAME = "gpt-4o"  # gpt-4o , gpt-4o-mini , gpt-4-turbo , gpt-4 , gpt-3.5-turbo 
 AZURE_API_VERSION = "2024-02-01"
 
@@ -234,6 +230,7 @@ for index, row in df.iterrows():
 output_csv = "SelectData_LLM2_NEexample_T02-2_gpt-4o.csv"
 pd.DataFrame(results).to_csv(output_csv, index=False)
 print("✅ All done! Output saved to:", output_csv)
+
 
 
 
